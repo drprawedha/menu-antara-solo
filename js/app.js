@@ -230,7 +230,7 @@ function showHome(){
 
 function setActiveMenu(category){
 
-    console.log("ACTIVE:", category);
+    const navWrapper = document.querySelector(".nav-wrapper");
 
     document
     .querySelectorAll(".nav-menu a")
@@ -241,6 +241,24 @@ function setActiveMenu(category){
         if(item.dataset.category === category){
 
             item.classList.add("active");
+
+            const left =
+                item.offsetLeft
+                - navWrapper.offsetWidth/2
+                + item.offsetWidth/2;
+
+            console.log(
+                item.offsetLeft,
+                navWrapper.offsetWidth,
+                item.offsetWidth
+            );
+            navWrapper.scrollTo({
+
+                left:left,
+
+                behavior:"smooth"
+
+            });
 
         }
 

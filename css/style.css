@@ -92,8 +92,18 @@ nav{
 
     flex:1;
 
-    overflow:hidden;
+    overflow-x:auto;
 
+    overflow-y:hidden;
+
+    scrollbar-width:none;
+
+    -ms-overflow-style:none;
+
+}
+
+.nav-wrapper::-webkit-scrollbar{
+    display:none;
 }
 
 
@@ -104,10 +114,6 @@ nav{
     gap:40px;
 
     list-style:none;
-
-    overflow-x:auto;
-
-    overflow-y:hidden;
 
     white-space:nowrap;
 
@@ -186,7 +192,11 @@ nav{
 
 }
 
-.nav-menu a:hover,
+.nav-menu a:hover{
+
+    color:#313131;
+
+}
 .nav-menu a.active{
 
     color:#a63f2b;
