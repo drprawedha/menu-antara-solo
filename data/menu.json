@@ -1,0 +1,43 @@
+[
+{
+"name":"Saripetojo Burger",
+"price":"104.5",
+"category":"INTERNATIONAL FAVOURITES",
+"description":"Juicy beef patty topped with a fried egg, fresh lettuce, caramelized onions, pickles, and tomato, served with French fries and coleslaw."
+},
+
+{
+"name":"Cheese Burger",
+"price":"104.5",
+"category":"INTERNATIONAL FAVOURITES",
+"description":"A juicy beef patty with melted mozzarella cheese, fresh lettuce, caramelized onions, pickles, and tomato, served in a soft burger bun with French fries and coleslaw."
+},
+
+{
+"name":"The Club Sandwich",
+"price":"88",
+"category":"INTERNATIONAL FAVOURITES",
+"description":"Layers of grilled chicken and smoked beef with cheddar cheese, fried egg, pickles, tomato, and caramelized onions, served on focaccia bread with French fries and coleslaw."
+},
+
+{
+"name":"Tenderloin Steak",
+"price":"236.5",
+"category":"GRILL",
+"description":"Australian beef cooked to perfection with vegetables and your choice of sauce."
+},
+
+{
+"name":"Cheese Cake",
+"price":"41.8",
+"category":"DESSERT",
+"description":"Baked cheesecake with smooth texture and balanced flavour."
+},
+
+{
+"name":"Espresso",
+"price":"33",
+"category":"COFFEE",
+"description":"Freshly brewed espresso with a bold aroma."
+}
+]
