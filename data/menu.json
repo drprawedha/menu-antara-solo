@@ -1,43 +1,629 @@
-[
+
+{
+"name":"Beef Nachos Saripetojo",
+"category":"LIGHT BITES",
+"price":104.5,
+"description":"Crispy tortilla chips topped with fresh tomatoes, seasoned ground beef, melted mozzarella cheese, and jalapeños, served with guacamole, tomato salsa and sour cream."
+},
+{
+"name":"Vegetable Spring Roll",
+"category":"LIGHT BITES",
+"price":38.5,
+"description":"Crispy golden spring rolls filled with fresh vegetables served with Bangkok and chili sauce."
+},
+{
+"name":"French Fries",
+"category":"LIGHT BITES",
+"price":44,
+"description":"Deep fried potato strips."
+},
+{
+"name":"Onion Ring",
+"category":"LIGHT BITES",
+"price":33,
+"description":"Crispy onion rings served with sweet chili sauce."
+},
+{
+"name":"Mendoan Banyumas",
+"category":"LIGHT BITES",
+"price":33,
+"description":"Tempe fritters served with sweet soy sauce and green chili."
+},
+{
+"name":"Tahu Goreng Krispi",
+"category":"LIGHT BITES",
+"price":33,
+"description":"Crispy fried tofu served with sweet soy sauce and green chili."
+},
+{
+"name":"Pisang Goreng",
+"category":"LIGHT BITES",
+"price":44,
+"description":"Fried banana served with chocolate sauce and sprinkles."
+},
+
+{
+"name":"Javanese Salad",
+"category":"APPETIZER & SALAD",
+"price":44,
+"description":"Traditional Indonesian salad with vegetables, tofu, tempeh, boiled egg and peanut sauce."
+},
+{
+"name":"Caesar Salad",
+"category":"APPETIZER & SALAD",
+"price":55,
+"description":"Romaine lettuce with cherry tomatoes, parmesan cheese and croutons."
+},
+{
+"name":"Grilled Chicken Breast",
+"category":"APPETIZER & SALAD",
+"price":22,
+"description":"Additional companion."
+},
+{
+"name":"Sauteed Prawn",
+"category":"APPETIZER & SALAD",
+"price":22,
+"description":"Additional companion."
+},
+
+{
+"name":"Vegetable Clear Soup",
+"category":"SOUP",
+"price":44,
+"description":"Clear broth with mixed vegetables."
+},
+{
+"name":"Tomato Cream Soup",
+"category":"SOUP",
+"price":55,
+"description":"Creamy tomato soup served with garlic bread."
+},
+{
+"name":"Mushroom Cream Soup",
+"category":"SOUP",
+"price":55,
+"description":"Creamy mushroom soup served with garlic bread."
+},
+
 {
 "name":"Saripetojo Burger",
-"price":"104.5",
 "category":"INTERNATIONAL FAVOURITES",
-"description":"Juicy beef patty topped with a fried egg, fresh lettuce, caramelized onions, pickles, and tomato, served with French fries and coleslaw."
+"price":104.5,
+"description":"Juicy beef patty topped with fried egg and vegetables."
 },
-
 {
 "name":"Cheese Burger",
-"price":"104.5",
 "category":"INTERNATIONAL FAVOURITES",
-"description":"A juicy beef patty with melted mozzarella cheese, fresh lettuce, caramelized onions, pickles, and tomato, served in a soft burger bun with French fries and coleslaw."
+"price":104.5,
+"description":"Beef burger with mozzarella cheese and French fries."
 },
-
 {
 "name":"The Club Sandwich",
-"price":"88",
 "category":"INTERNATIONAL FAVOURITES",
-"description":"Layers of grilled chicken and smoked beef with cheddar cheese, fried egg, pickles, tomato, and caramelized onions, served on focaccia bread with French fries and coleslaw."
+"price":88,
+"description":"Chicken and smoked beef sandwich with cheddar cheese."
+},
+{
+"name":"New York Steak Sandwich",
+"category":"INTERNATIONAL FAVOURITES",
+"price":95.7,
+"description":"Australian sirloin with cheddar cheese served in baguette."
+},
+{
+"name":"Create Your Own Pasta",
+"category":"INTERNATIONAL FAVOURITES",
+"price":95.7,
+"description":"Choice of pasta and sauce."
+},
+{
+"name":"Chicken Additional",
+"category":"INTERNATIONAL FAVOURITES",
+"price":22,
+"description":"Additional topping."
+},
+{
+"name":"Sausage Additional",
+"category":"INTERNATIONAL FAVOURITES",
+"price":22,
+"description":"Additional topping."
+},
+{
+"name":"Tuna Additional",
+"category":"INTERNATIONAL FAVOURITES",
+"price":22,
+"description":"Additional topping."
 },
 
 {
-"name":"Tenderloin Steak",
-"price":"236.5",
+"name":"Tenderloin Steak (200 gr)",
 "category":"GRILL",
-"description":"Australian beef cooked to perfection with vegetables and your choice of sauce."
+"price":236.5,
+"description":"Australian beef with vegetables and choice of sauce."
+},
+{
+"name":"Sirloin Steak (200 gr)",
+"category":"GRILL",
+"price":220,
+"description":"Australian sirloin steak with vegetables."
+},
+{
+"name":"Grilled Chicken Laweyan",
+"category":"GRILL",
+"price":121,
+"description":"Juicy grilled chicken served with vegetables."
+},
+
+{
+"name":"Quattro Formaggi",
+"category":"THIN CRUST PIZZA",
+"price":88,
+"description":"Four cheese pizza."
+},
+{
+"name":"Pizza Della Casa",
+"category":"THIN CRUST PIZZA",
+"price":88,
+"description":"Chicken, pineapple and jalapeno pizza."
+},
+{
+"name":"Margherita Pizza",
+"category":"THIN CRUST PIZZA",
+"price":88,
+"description":"Classic mozzarella pizza."
+},
+{
+"name":"Pizza Gardinerra",
+"category":"THIN CRUST PIZZA",
+"price":88,
+"description":"Vegetarian pizza with mushrooms and asparagus."
+}
+
+{
+"name":"Oxtail Soup",
+"category":"INDONESIAN HERITAGE",
+"price":126.5,
+"description":"Beef oxtail with carrot, potato, spring onion, celery, melinjo crackers, steamed rice, sambal and sweet soy sauce."
+},
+{
+"name":"Tengkleng Saripetojo",
+"category":"INDONESIAN HERITAGE",
+"price":97.9,
+"description":"Beef cooked with cardamom, cumin, turmeric, coconut milk and aromatic spices."
+},
+{
+"name":"Grilled Beef Ribs Saripetojo",
+"category":"INDONESIAN HERITAGE",
+"price":97.9,
+"description":"Javanese sweet soy glazed beef ribs with rice and vegetables."
+},
+{
+"name":"Antara Fried Rice",
+"category":"INDONESIAN HERITAGE",
+"price":74.8,
+"description":"Fried rice with chicken or prawn, fried egg and crackers."
+},
+{
+"name":"Tongseng Slamet Riyadi",
+"category":"INDONESIAN HERITAGE",
+"price":97.9,
+"description":"Tender lamb slow cooked in aromatic coconut curry."
+},
+{
+"name":"Mie Godok Jawa",
+"category":"INDONESIAN HERITAGE",
+"price":71.5,
+"description":"Traditional Javanese noodle dish with vegetables and boiled egg."
+},
+{
+"name":"Purwosari Traditional Fried Noodles",
+"category":"INDONESIAN HERITAGE",
+"price":74.8,
+"description":"Stir fried noodles with braised chicken and vegetables."
+},
+{
+"name":"Saripetojo Fried Chicken",
+"category":"INDONESIAN HERITAGE",
+"price":93.5,
+"description":"Fried chicken served with rice and Javanese vegetables."
+},
+{
+"name":"Saripetojo Fried Duck",
+"category":"INDONESIAN HERITAGE",
+"price":101.2,
+"description":"Fried duck served with rice and vegetables."
+},
+{
+"name":"Nasi Goreng Kampung",
+"category":"INDONESIAN HERITAGE",
+"price":75,
+"description":"Village style Indonesian fried rice with fried egg."
+},
+
+{
+"name":"Sapo Tofu",
+"category":"ASIAN DELIGHT",
+"price":74.8,
+"description":"Tofu with bok choy, broccoli, cauliflower and sesame oil."
+},
+{
+"name":"Beef Black Pepper",
+"category":"ASIAN DELIGHT",
+"price":93.5,
+"description":"Beef with black pepper sauce, capsicum and steamed rice."
+},
+{
+"name":"Szechuan Beef",
+"category":"ASIAN DELIGHT",
+"price":98,
+"description":"Beef sauteed in spicy Szechuan style sauce."
 },
 
 {
 "name":"Cheese Cake",
-"price":"41.8",
 "category":"DESSERT",
+"price":41.8,
 "description":"Baked cheesecake with smooth texture and balanced flavour."
+},
+{
+"name":"Chocolate Cake",
+"category":"DESSERT",
+"price":41.8,
+"description":"Chocolate cake with rich cocoa flavour."
+},
+{
+"name":"Red Velvet Cake",
+"category":"DESSERT",
+"price":41.8,
+"description":"Red velvet sponge cake layered with smooth frosting."
+},
+{
+"name":"Black Forest Cake",
+"category":"DESSERT",
+"price":41.8,
+"description":"Chocolate sponge cake layered with cream and cherries."
+},
+{
+"name":"Tiramisu Cake",
+"category":"DESSERT",
+"price":49.5,
+"description":"Mascarpone cream layered with coffee and ladyfinger biscuits."
+},
+{
+"name":"Seasonal Tropical Fruits",
+"category":"DESSERT",
+"price":44,
+"description":"Watermelon, papaya, honeydew and pineapple."
+}
+
+{
+"name":"Espresso Single",
+"category":"COFFEE SELECTIONS",
+"price":33,
+"description":"Freshly brewed espresso with a bold aroma."
+},
+{
+"name":"Espresso Double",
+"category":"COFFEE SELECTIONS",
+"price":44,
+"description":"Freshly brewed double espresso."
+},
+{
+"name":"Americano",
+"category":"COFFEE SELECTIONS",
+"price":33,
+"description":"Espresso diluted with hot water."
+},
+{
+"name":"Cappuccino",
+"category":"COFFEE SELECTIONS",
+"price":44,
+"description":"Espresso with steamed milk and foam."
+},
+{
+"name":"Caffe Latte",
+"category":"COFFEE SELECTIONS",
+"price":38.5,
+"description":"Espresso combined with steamed milk."
+},
+{
+"name":"Flat White",
+"category":"COFFEE SELECTIONS",
+"price":38.5,
+"description":"Espresso with silky milk."
+},
+{
+"name":"Affogato",
+"category":"COFFEE SELECTIONS",
+"price":38.5,
+"description":"Espresso served with vanilla ice cream."
+},
+{
+"name":"Macchiato",
+"category":"COFFEE SELECTIONS",
+"price":38.5,
+"description":"Espresso topped with milk foam."
+},
+{
+"name":"Caramel Latte",
+"category":"COFFEE SELECTIONS",
+"price":44,
+"description":"Espresso with milk and caramel syrup."
+},
+{
+"name":"Hazelnut Latte",
+"category":"COFFEE SELECTIONS",
+"price":38.5,
+"description":"Espresso with hazelnut syrup."
+},
+{
+"name":"Vanilla Latte",
+"category":"COFFEE SELECTIONS",
+"price":38.5,
+"description":"Espresso with vanilla syrup."
+},
+{
+"name":"Mochaccino",
+"category":"COFFEE SELECTIONS",
+"price":44,
+"description":"Espresso with chocolate powder."
+},
+{
+"name":"Antara Latte",
+"category":"COFFEE SELECTIONS",
+"price":44,
+"description":"Espresso with palm sugar and creamer."
+},
+{
+"name":"Kyoto Latte",
+"category":"COFFEE SELECTIONS",
+"price":44,
+"description":"Espresso with matcha powder."
 },
 
 {
-"name":"Espresso",
-"price":"33",
-"category":"COFFEE",
-"description":"Freshly brewed espresso with a bold aroma."
+"name":"Dilmah English Breakfast",
+"category":"TEA SPECIALITIES",
+"price":38.5,
+"description":"Classic black tea."
+},
+{
+"name":"Dilmah Early Grey",
+"category":"TEA SPECIALITIES",
+"price":38.5,
+"description":"Black tea infused with bergamot."
+},
+{
+"name":"Dilmah Chamomile",
+"category":"TEA SPECIALITIES",
+"price":38.5,
+"description":"Herbal infusion with floral notes."
+},
+{
+"name":"Dilmah Jasmine",
+"category":"TEA SPECIALITIES",
+"price":38.5,
+"description":"Green tea scented with jasmine."
+},
+{
+"name":"Dilmah Peppermint",
+"category":"TEA SPECIALITIES",
+"price":38.5,
+"description":"Refreshing mint infusion."
+},
+{
+"name":"Dilmah Peach",
+"category":"TEA SPECIALITIES",
+"price":38.5,
+"description":"Tea with peach flavour."
+},
+{
+"name":"Dilmah Pure Green",
+"category":"TEA SPECIALITIES",
+"price":38.5,
+"description":"Pure green tea."
+},
+{
+"name":"Iced Tea",
+"category":"TEA SPECIALITIES",
+"price":33,
+"description":"Chilled brewed tea."
+},
+{
+"name":"Iced Lychee Tea",
+"category":"TEA SPECIALITIES",
+"price":38.5,
+"description":"Tea infused with lychee flavour."
+},
+{
+"name":"Iced Lemon Tea",
+"category":"TEA SPECIALITIES",
+"price":38.5,
+"description":"Tea with lemon notes."
+},
+
+{
+"name":"Create Your Own Mix Juice (2 Fruits)",
+"category":"FRESH JUICE",
+"price":49.5,
+"description":"Two fruit combinations."
+},
+{
+"name":"Create Your Own Mix Juice (3 Fruits)",
+"category":"FRESH JUICE",
+"price":52.8,
+"description":"Three fruit combinations."
+},
+{
+"name":"Fresh Juice",
+"category":"FRESH JUICE",
+"price":44,
+"description":"Avocado, banana, carrot, orange, honeydew, pineapple, tomato, strawberry, watermelon."
+},
+
+{
+"name":"Banana Nut Smoothies",
+"category":"MOCKTAILS",
+"price":44,
+"description":"Banana, vanilla ice cream, peanut butter and milk."
+},
+{
+"name":"Virgin Mojito",
+"category":"MOCKTAILS",
+"price":38.5,
+"description":"Lime, mint, sprite and syrup."
+},
+{
+"name":"Strawberry Splash",
+"category":"MOCKTAILS",
+"price":44,
+"description":"Strawberry and orange juice."
+},
+{
+"name":"Antara Punch",
+"category":"MOCKTAILS",
+"price":38.5,
+"description":"Orange, pineapple and apple juice."
+},
+{
+"name":"Amaranggana",
+"category":"MOCKTAILS",
+"price":38.5,
+"description":"Rose tea and vanilla syrup."
+},
+{
+"name":"Shirley Temple",
+"category":"MOCKTAILS",
+"price":44,
+"description":"Lime juice and sprite."
+},
+
+{
+"name":"Purwoceng",
+"category":"TRADITIONAL DRINKS",
+"price":41.8,
+"description":"Purwoceng with spices."
+},
+{
+"name":"Wedang Uwuh",
+"category":"TRADITIONAL DRINKS",
+"price":41.8,
+"description":"Secang, cinnamon and ginger."
+},
+{
+"name":"Wedang Alang-Alang",
+"category":"TRADITIONAL DRINKS",
+"price":41.8,
+"description":"Blady grass with spices."
+},
+{
+"name":"Wedang Jahe",
+"category":"TRADITIONAL DRINKS",
+"price":41.8,
+"description":"Fresh ginger and palm sugar."
+},
+
+{
+"name":"Chocolate Milkshake",
+"category":"MILKSHAKE",
+"price":44,
+"description":"Chocolate powder and ice cream."
+},
+{
+"name":"Strawberry Milkshake",
+"category":"MILKSHAKE",
+"price":44,
+"description":"Strawberry syrup and ice cream."
+},
+{
+"name":"Vanilla Milkshake",
+"category":"MILKSHAKE",
+"price":44,
+"description":"Vanilla syrup and ice cream."
+},
+{
+"name":"Matcha Milkshake",
+"category":"MILKSHAKE",
+"price":44,
+"description":"Matcha powder and vanilla ice cream."
+},
+
+{
+"name":"Coca Cola 250ml",
+"category":"SOFT DRINK",
+"price":30.8,
+"description":"Coca Cola."
+},
+{
+"name":"Diet Coke 250ml",
+"category":"SOFT DRINK",
+"price":30.8,
+"description":"Diet Coke."
+},
+{
+"name":"Fanta 250ml",
+"category":"SOFT DRINK",
+"price":30.8,
+"description":"Fanta."
+},
+{
+"name":"Sprite 250ml",
+"category":"SOFT DRINK",
+"price":30.8,
+"description":"Sprite."
+},
+{
+"name":"Soda Water 250ml",
+"category":"SOFT DRINK",
+"price":30.8,
+"description":"Soda Water."
+},
+{
+"name":"Aqua Reflection 380ml",
+"category":"SOFT DRINK",
+"price":41.8,
+"description":"Still water."
+},
+{
+"name":"Aqua Reflection Sparkling 380ml",
+"category":"SOFT DRINK",
+"price":44,
+"description":"Sparkling water."
+},
+
+{
+"name":"Prost Pilsner",
+"category":"BEERS",
+"price":66,
+"description":"Beer."
+},
+{
+"name":"Prost Lager",
+"category":"BEERS",
+"price":71.5,
+"description":"Beer."
+},
+{
+"name":"Bintang Pilsner",
+"category":"BEERS",
+"price":66,
+"description":"Beer."
+},
+{
+"name":"Bintang Radler",
+"category":"BEERS",
+"price":71.5,
+"description":"Beer."
+},
+{
+"name":"Bintang Crystal",
+"category":"BEERS",
+"price":77,
+"description":"Beer."
+},
+{
+"name":"Heineken Beer",
+"category":"BEERS",
+"price":77,
+"description":"Beer."
 }
-]
