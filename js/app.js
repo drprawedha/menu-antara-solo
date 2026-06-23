@@ -20,44 +20,84 @@ window.onload = () => {
 let menuData = [];
 
 const heroImages = {
-
     "HOME": "home.png",
-
     "LIGHT BITES": "light-bites.png",
-
     "APPETIZER & SALAD": "appetizer.png",
-
     "SOUP": "soup.png",
-
     "INTERNATIONAL FAVOURITES": "international.png",
-
     "GRILL": "grill.png",
-
     "THIN CRUST PIZZA": "pizza.png",
-
     "INDONESIAN HERITAGE": "heritage.png",
-
     "ASIAN DELIGHT": "asian.png",
-
     "DESSERT": "dessert.png",
-
     "COFFEE SELECTIONS": "coffee.png",
-
     "TEA SPECIALITIES": "tea.png",
-
     "FRESH JUICE": "juice.png",
-
     "MOCKTAILS": "mocktail.png",
-
     "TRADITIONAL DRINKS": "traditional.png",
-
     "MILKSHAKE": "milkshake.png",
-
     "SOFT DRINK": "softdrink.png",
-
     "BEERS": "beer.png"
+};
+
+const heroDescriptions = {
+
+    "HOME":
+    "Experience Indonesian Heritage & International Cuisine",
+
+    "LIGHT BITES":
+    "Perfect bites to begin your culinary journey.",
+
+    "APPETIZER & SALAD":
+    "Fresh ingredients crafted to awaken your palate.",
+
+    "SOUP":
+    "Comforting flavours inspired by timeless recipes.",
+
+    "INTERNATIONAL FAVOURITES":
+    "Classic dishes from around the world, thoughtfully prepared.",
+
+    "GRILL":
+    "Premium cuts and signature grills cooked to perfection.",
+
+    "THIN CRUST PIZZA":
+    "Thin crust creations baked with authentic flavours.",
+
+    "INDONESIAN HERITAGE":
+    "Celebrating the richness of Indonesian culinary traditions.",
+
+    "ASIAN DELIGHT":
+    "A delightful journey through Asia's vibrant flavours.",
+
+    "DESSERT":
+    "Sweet endings crafted with passion and elegance.",
+
+    "COFFEE SELECTIONS":
+    "Freshly brewed moments to accompany every conversation.",
+
+    "TEA SPECIALITIES":
+    "A refined collection of teas for every mood.",
+
+    "FRESH JUICE":
+    "Naturally refreshing blends made from fresh fruits.",
+
+    "MOCKTAILS":
+    "Creative and refreshing drinks without compromise.",
+
+    "TRADITIONAL DRINKS":
+    "Timeless Indonesian beverages with authentic character.",
+
+    "MILKSHAKE":
+    "Smooth and creamy indulgence for every occasion.",
+
+    "SOFT DRINK":
+    "Classic refreshment served chilled to perfection.",
+
+    "BEERS":
+    "A selection of beers best enjoyed with great company."
 
 };
+
 // =======================
 // LOAD JSON
 // =======================
@@ -117,24 +157,24 @@ fetch("data/menu.json")
     });
 
     // HOME BUTTON
-document.getElementById("homeBtn")
-.addEventListener("click",(e)=>{
+    document.getElementById("homeBtn")
+    .addEventListener("click",(e)=>{
 
-    e.preventDefault();
+        e.preventDefault();
 
-    showHome();
+        showHome();
 
-    document
-    .querySelectorAll(".nav-menu a")
-    .forEach(item=>{
+        document
+        .querySelectorAll(".nav-menu a")
+        .forEach(item=>{
 
-        item.classList.remove("active");
+            item.classList.remove("active");
+
+        });
 
     });
 
-});
-
-});
+    });
 
 // =======================
 // HOME
@@ -146,18 +186,18 @@ function showHome(){
 
     changeHero("HOME");
     document
-.querySelectorAll(".nav-menu a")
-.forEach(item=>{
+    .querySelectorAll(".nav-menu a")
+    .forEach(item=>{
 
-    item.classList.remove("active");
+        item.classList.remove("active");
 
-});
+    });
 
     document.getElementById("hero-title").innerHTML =
     "ANTARA RESTAURANT";
 
     document.getElementById("hero-description").innerHTML =
-    "Experience Indonesian Heritage & International Cuisine";
+    heroDescriptions["HOME"];
 
     document.getElementById("menu-container").innerHTML = `
 
@@ -325,7 +365,7 @@ function showCategory(category){
     category;
 
     document.getElementById("hero-description").innerHTML =
-    "Explore our selection";
+    heroDescriptions[category] || "Explore our selection";
 
     let filtered = menuData.filter(item=>
 
