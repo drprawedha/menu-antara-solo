@@ -68,12 +68,90 @@ fetch("data/menu.json")
 
     menuData = data;
 
-    // halaman awal kosong
-    function showHome(){
+    // tampilkan halaman home pertama kali
+    showHome();
+
+    // search
+    document.getElementById("searchInput")
+    .addEventListener("keyup",(e)=>{
+
+        let keyword=e.target.value.toLowerCase();
+
+        let filtered = menuData.filter(item=>
+
+            item.name.toLowerCase().includes(keyword) ||
+
+            item.description.toLowerCase().includes(keyword)
+
+        );
+
+        document.getElementById("currentCategory").innerHTML =
+        "SEARCH RESULT";
+
+        changeHero("HOME");
+
+        document.getElementById("hero-title").innerHTML =
+        "SEARCH RESULT";
+
+        document.getElementById("hero-description").innerHTML =
+        "Find your favourite dishes";
+
+        showMenu(filtered);
+
+    });
+
+    // kategori
+    document.querySelectorAll("[data-category]")
+    .forEach(btn=>{
+
+        btn.addEventListener("click",(e)=>{
+
+            e.preventDefault();
+
+            let category = btn.dataset.category;
+
+            showCategory(category);
+
+        });
+
+    });
+
+    // HOME BUTTON
+document.getElementById("homeBtn")
+.addEventListener("click",(e)=>{
+
+    e.preventDefault();
+
+    showHome();
+
+    document
+    .querySelectorAll(".nav-menu a")
+    .forEach(item=>{
+
+        item.classList.remove("active");
+
+    });
+
+});
+
+});
+
+// =======================
+// HOME
+// =======================
+
+function showHome(){
 
     document.getElementById("currentCategory").innerHTML = "";
 
     changeHero("HOME");
+    document
+.querySelectorAll(".nav-menu a")
+.forEach(item=>{
+
+    item.classList.remove("active");
+
+});
 
     document.getElementById("hero-title").innerHTML =
     "ANTARA RESTAURANT";
@@ -90,17 +168,13 @@ fetch("data/menu.json")
         </h2>
 
         <div class="subtitle">
-
             Inspired by Heritage, Crafted with Passion
-
         </div>
 
         <p>
-
-        From traditional Indonesian recipes to international classics,
-        every dish at ANTARA is carefully prepared to create memorable
-        experiences through authentic flavours and refined culinary artistry.
-
+            From traditional Indonesian recipes to international classics,
+            every dish at ANTARA is carefully prepared to create memorable
+            experiences through authentic flavours and refined culinary artistry.
         </p>
 
     </div>
@@ -109,119 +183,12 @@ fetch("data/menu.json")
 
 }
 
-    // search
-    document.getElementById("searchInput")
-    .addEventListener("keyup", (e)=>{
-
-        let keyword = e.target.value.toLowerCase();
-
-        let filtered = menuData.filter(item =>
-            item.name.toLowerCase().includes(keyword)
-        );
-
-        document.getElementById("currentCategory").innerHTML = "SEARCH RESULT";
-
-        showMenu(filtered);
-
-    });
-
-
-    // kategori
-    document.querySelectorAll("[data-category]").forEach(btn=>{
-
-        btn.addEventListener("click",(e)=>{
-
-            e.preventDefault();
-
-            let category = btn.dataset.category;
-
-            showCategory(category);
-
-        });
-
-    });
-
-
-    // tombol home
-    document.getElementById("homeBtn")
-    .addEventListener("click",(e)=>{
-
-        e.preventDefault();
-
-        showHome();
-
-document.getElementById("homeBtn")
-.addEventListener("click",(e)=>{
-
-    e.preventDefault();
-
-    showHome();
-
-    document
-    .querySelectorAll(".nav-menu a")
-    .forEach(item=>item.classList.remove("active"));
-
-});
-
-    });
-
-
-});
-
-
-// =======================
-// HOME
-// =======================
-
-function showHome(){
-
-    document.getElementById("currentCategory").innerHTML = "";
-
-    document.getElementById("menu-container").innerHTML = `
-
-        <div class="welcome">
-
-            <h2>Welcome to ANTARA Restaurant</h2>
-
-            <p>
-            Experience Indonesian Heritage and International Cuisine.
-            Please select a category from the menu above.
-            </p>
-
-        </div>
-
-    `;
-
-    document.getElementById("hero-title").innerHTML =
-    "ANTARA RESTAURANT";
-
-}
-
 
 // =======================
 // CATEGORY
 // =======================
 
-function showCategory(category){
-
-    document.getElementById("currentCategory").innerHTML =
-    category;
-
-    changeHero(category);
-
-    document.getElementById("hero-title").innerHTML =
-    category;
-
-    document.getElementById("hero-description").innerHTML =
-    "Explore our selection";
-
-    let filtered = menuData.filter(item =>
-        item.category === category
-    );
-
-    showMenu(filtered);
-
-    function setActiveMenu(category){
+function setActiveMenu(category){
 
     document
     .querySelectorAll(".nav-menu a")
@@ -234,8 +201,6 @@ function showCategory(category){
     document
     .querySelector(`[data-category="${category}"]`)
     ?.classList.add("active");
-
-}
 
 }
 
@@ -287,12 +252,11 @@ function showMenu(data){
 
 const slider = document.querySelector(".nav-menu");
 
+if(slider){
+
 let isDown = false;
-
 let startX;
-
 let scrollLeft;
-
 
 slider.addEventListener("mousedown",(e)=>{
 
@@ -306,7 +270,6 @@ slider.addEventListener("mousedown",(e)=>{
 
 });
 
-
 slider.addEventListener("mouseleave",()=>{
 
     isDown = false;
@@ -315,7 +278,6 @@ slider.addEventListener("mouseleave",()=>{
 
 });
 
-
 slider.addEventListener("mouseup",()=>{
 
     isDown = false;
@@ -323,7 +285,6 @@ slider.addEventListener("mouseup",()=>{
     slider.classList.remove("active");
 
 });
-
 
 slider.addEventListener("mousemove",(e)=>{
 
@@ -339,6 +300,8 @@ slider.addEventListener("mousemove",(e)=>{
 
 });
 
+}
+
 function changeHero(category){
 
     const hero = document.getElementById("hero");
@@ -349,3 +312,31 @@ function changeHero(category){
         `url('images/hero/${image}')`;
 
 }
+
+
+function showCategory(category){
+
+    document.getElementById("currentCategory").innerHTML =
+    category;
+
+    changeHero(category);
+
+    document.getElementById("hero-title").innerHTML =
+    category;
+
+    document.getElementById("hero-description").innerHTML =
+    "Explore our selection";
+
+    let filtered = menuData.filter(item=>
+
+        item.category === category
+
+    );
+
+    showMenu(filtered);
+
+    setActiveMenu(category);
+
+}
+
+
