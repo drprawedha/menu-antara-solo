@@ -19,7 +19,45 @@ window.onload = () => {
 
 let menuData = [];
 
+const heroImages = {
 
+    "HOME": "home.png",
+
+    "LIGHT BITES": "light-bites.png",
+
+    "APPETIZER & SALAD": "appetizer.png",
+
+    "SOUP": "soup.png",
+
+    "INTERNATIONAL FAVOURITES": "international.png",
+
+    "GRILL": "grill.png",
+
+    "THIN CRUST PIZZA": "pizza.png",
+
+    "INDONESIAN HERITAGE": "heritage.png",
+
+    "ASIAN DELIGHT": "asian.png",
+
+    "DESSERT": "dessert.png",
+
+    "COFFEE SELECTIONS": "coffee.png",
+
+    "TEA SPECIALITIES": "tea.png",
+
+    "FRESH JUICE": "juice.png",
+
+    "MOCKTAILS": "mocktail.png",
+
+    "TRADITIONAL DRINKS": "traditional.png",
+
+    "MILKSHAKE": "milkshake.png",
+
+    "SOFT DRINK": "softdrink.png",
+
+    "BEERS": "beer.png"
+
+};
 // =======================
 // LOAD JSON
 // =======================
@@ -31,7 +69,45 @@ fetch("data/menu.json")
     menuData = data;
 
     // halaman awal kosong
-    showHome();
+    function showHome(){
+
+    document.getElementById("currentCategory").innerHTML = "";
+
+    changeHero("HOME");
+
+    document.getElementById("hero-title").innerHTML =
+    "ANTARA RESTAURANT";
+
+    document.getElementById("hero-description").innerHTML =
+    "Experience Indonesian Heritage & International Cuisine";
+
+    document.getElementById("menu-container").innerHTML = `
+
+    <div class="welcome">
+
+        <h2>
+            A Tasteful Experience Awaits
+        </h2>
+
+        <div class="subtitle">
+
+            Inspired by Heritage, Crafted with Passion
+
+        </div>
+
+        <p>
+
+        From traditional Indonesian recipes to international classics,
+        every dish at ANTARA is carefully prepared to create memorable
+        experiences through authentic flavours and refined culinary artistry.
+
+        </p>
+
+    </div>
+
+    `;
+
+}
 
     // search
     document.getElementById("searchInput")
@@ -73,6 +149,19 @@ fetch("data/menu.json")
         e.preventDefault();
 
         showHome();
+
+document.getElementById("homeBtn")
+.addEventListener("click",(e)=>{
+
+    e.preventDefault();
+
+    showHome();
+
+    document
+    .querySelectorAll(".nav-menu a")
+    .forEach(item=>item.classList.remove("active"));
+
+});
 
     });
 
@@ -118,11 +207,35 @@ function showCategory(category){
     document.getElementById("currentCategory").innerHTML =
     category;
 
+    changeHero(category);
+
+    document.getElementById("hero-title").innerHTML =
+    category;
+
+    document.getElementById("hero-description").innerHTML =
+    "Explore our selection";
+
     let filtered = menuData.filter(item =>
         item.category === category
     );
 
     showMenu(filtered);
+
+    function setActiveMenu(category){
+
+    document
+    .querySelectorAll(".nav-menu a")
+    .forEach(item=>{
+
+        item.classList.remove("active");
+
+    });
+
+    document
+    .querySelector(`[data-category="${category}"]`)
+    ?.classList.add("active");
+
+}
 
 }
 
@@ -226,3 +339,13 @@ slider.addEventListener("mousemove",(e)=>{
 
 });
 
+function changeHero(category){
+
+    const hero = document.getElementById("hero");
+
+    const image = heroImages[category] || "home.png";
+
+    hero.style.backgroundImage =
+        `url('images/hero/${image}')`;
+
+}

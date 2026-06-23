@@ -574,4 +574,14 @@ footer{
 
 }
 
+.nav-menu a.active{
+
+    color:#a63f2b;
+
+    border-bottom:1px solid #a63f2b;
+
+    padding-bottom:8px;
+
+}
+
 }
