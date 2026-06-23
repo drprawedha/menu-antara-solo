@@ -112,6 +112,7 @@ nav{
     white-space:nowrap;
 
     scroll-behavior:smooth;
+    scroll-snap-type:x proximity;
 
     scrollbar-width:none;
 
@@ -141,6 +142,8 @@ nav{
 .nav-menu li{
 
     flex-shrink:0;
+    scroll-snap-align:center;
+
 
 }
 
