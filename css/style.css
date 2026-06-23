@@ -117,20 +117,39 @@ nav{
 
     -ms-overflow-style:none;
 
+    cursor:grab;
+
+    user-select:none;
+
+}
+
+
+.nav-menu.active{
+
+    cursor:grabbing;
+
 }
 
 
 .nav-menu::-webkit-scrollbar{
+
     display:none;
+
 }
 
 
 .nav-menu li{
+
     flex-shrink:0;
+
 }
 
 
 .nav-menu a{
+
+    display:inline-block;
+
+    position:relative;
 
     text-decoration:none;
 
@@ -138,17 +157,45 @@ nav{
 
     font-size:20px;
 
+    padding-bottom:10px;
+
     transition:.3s;
 
 }
 
+.nav-menu a::after{
 
-.nav-menu a:hover{
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:0;
+
+    height:2px;
+
+    background:#a63f2b;
+
+    transition:.3s ease;
+
+}
+
+.nav-menu a:hover,
+.nav-menu a.active{
 
     color:#a63f2b;
 
 }
 
+.nav-menu a:hover::after,
+.nav-menu a.active::after{
+
+    width:100%;
+
+}
 
 /* ======================
 HERO
@@ -172,7 +219,9 @@ HERO
 
     align-items:center;
 
-    transition:1s;
+    background-repeat:no-repeat;
+
+    transition:all .8s ease;
 
 }
 
@@ -189,6 +238,8 @@ HERO
 
 
 .hero-content{
+
+    width:90%;
 
     position:relative;
 
@@ -215,7 +266,6 @@ HERO
     font-size:28px;
 
 }
-
 
 /* ======================
 SEARCH
@@ -447,20 +497,11 @@ nav{
 
 }
 
-
-.nav-menu a{
-
-    font-size:16px;
-
-}
-
-
 #hero{
 
-    height:45vh;
+    height:50vh;
 
 }
-
 
 .hero-content h1{
 
@@ -574,14 +615,6 @@ footer{
 
 }
 
-.nav-menu a.active{
 
-    color:#a63f2b;
-
-    border-bottom:1px solid #a63f2b;
-
-    padding-bottom:8px;
-
-}
 
 }

@@ -230,17 +230,21 @@ function showHome(){
 
 function setActiveMenu(category){
 
+    console.log("ACTIVE:", category);
+
     document
     .querySelectorAll(".nav-menu a")
     .forEach(item=>{
 
         item.classList.remove("active");
 
-    });
+        if(item.dataset.category === category){
 
-    document
-    .querySelector(`[data-category="${category}"]`)
-    ?.classList.add("active");
+            item.classList.add("active");
+
+        }
+
+    });
 
 }
 
