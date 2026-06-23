@@ -1,4 +1,4 @@
-
+[
 {
 "name":"Beef Nachos Saripetojo",
 "category":"LIGHT BITES",
@@ -177,7 +177,7 @@
 "category":"THIN CRUST PIZZA",
 "price":88,
 "description":"Vegetarian pizza with mushrooms and asparagus."
-}
+},
 
 {
 "name":"Oxtail Soup",
@@ -294,7 +294,8 @@
 "category":"DESSERT",
 "price":44,
 "description":"Watermelon, papaya, honeydew and pineapple."
-}
+},
+
 
 {
 "name":"Espresso Single",
@@ -627,3 +628,4 @@
 "price":77,
 "description":"Beer."
 }
+]

@@ -33,17 +33,59 @@ letter-spacing:10px;
 /* header */
 
 header{
-position:fixed;
-width:100%;
-background:white;
-box-shadow:0 2px 15px rgba(0,0,0,.1);
-z-index:1000;
+position:fixed; top:0; left:0; width:100%; background:white; box-shadow:0 2px 15px rgba(0,0,0,.08); z-index:1000;
 }
 
 nav{
-display:flex;
-justify-content:space-between;
-padding:25px 80px;
+display:flex; align-items:center; gap:40px; padding:20px 40px;
+}
+
+.nav-menu{
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+
+.logo{ flex-shrink:0; font-size:40px; font-weight:bold; color:#a63f2b; }
+
+.nav-wrapper{ flex:1; overflow:hidden; }
+
+.nav-menu{ display:flex; gap:50px; list-style:none; overflow-x:auto; overflow-y:hidden; white-space:nowrap; scroll-behavior:smooth; cursor:grab; user-select:none; scrollbar-width:none; -ms-overflow-style:none; }
+
+
+/* Hilangkan scrollbar */
+
+.nav-menu::-webkit-scrollbar{
+    display:none;
+}
+
+.nav-menu.active{ cursor:grabbing; }
+
+.nav-menu{
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+}
+
+.nav-menu li{
+    flex-shrink:0;
+}
+
+.nav-menu a{
+
+    text-decoration:none;
+
+    color:#8c6d60;
+
+    font-size:22px;
+
+    transition:.3s;
+
+}
+
+.nav-menu a:hover{
+
+    color:#a63f2b;
+
 }
 
 .logo{
